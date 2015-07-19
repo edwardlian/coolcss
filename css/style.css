@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+#nav {
+  font-size: 1.2em;
+}
+
+#nav #navbar {
+  height: 34px;
+  width: 100%;
+  border-bottom: solid 1px #000;
+  line-height: 34px;
+}
+
+#nav #navbar li {
+  list-style: none;
+  display: inline-block;
+  position: relative; /* 被對齊 */
+}
+
+#subnavbar {
+  position: absolute; /* 對齊 */
+  /* display: none; */
+  -webkit-transition:0.3s opacity;
+  transition:0.3s opacity;
+  opacity: 0;
+}
+
+#dropmenu:hover #subnavbar {
+  /* display: block; */
+  opacity: 1;
+}
